@@ -5,80 +5,141 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui;
 }
 
+.branco{
+    color: white;
+}
 .flex-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Alinha os itens no centro verticalmente */
+    justify-content: space-between;
 }
 
 header {
     background-color: rgb(228, 48, 222);
-    padding: 20px;
+    padding: 10px;
 }
 
 header nav {
     flex: 1;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-nav img {
-    width: 200px;
+nav h1 {
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
+    padding-bottom: 10px;
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
-nav a {
+nav a, a:visited{
     text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+ul a:hover{
+    background-color: white;
+    color:rgb(228, 48, 222);
+}
+
+/* ==========  CONTEÚDO  =============*/
+main {
+    background-color: #f0f0f0;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.intro {
+    background-color: #e0e0e0;
+}
+.intro p{
+    padding-bottom: 20px;
+}
+
+.service {
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Alinha os itens no centro verticalmente */
-}
-
-article {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    width: 100%; /* Garante que o artigo ocupe toda a largura */
-}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-article h2 {
+h1, h2 {
+    font-family: 'Times New Roman', serif;
     color: #333;
-    font-size: 1.5em;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.tool {
+    text-align: center;
+}
+
+.tool h2 {
     margin-bottom: 10px;
 }
 
-article p {
-    color: #666;
-    line-height: 1.6;
-    margin-bottom: 15px;
+.tool div {
+    display: flex;
+    justify-content: space-around;
 }
 
+.tool img {
+    max-width: 300px;
+    height: auto;
+    margin: 0 10px;
+    flex-shrink: 0;
+}
+/* ===================          RODAPÉ            =============*/
 footer {
     background-color: rgb(228, 48, 222);
     color: white;
     padding: 20px;
+    text-align: center;
+}
+.rodape {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.rodape p {
+    margin-bottom: 10px;
+}
+.rodape h3 {
+    margin-bottom: 10px;
+}
+.rodape a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
 }
