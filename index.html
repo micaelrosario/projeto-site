@@ -9,24 +9,26 @@
 <body>
     <header class="flex-container">
         <nav>
-          <a href="index.html"><h1><span class="branco">Estag</span>SEO</h1></a>
-          <ul> 
-            <li><a href="#">Home</a></li>                                  
-            <li><a href="#">Contato</a></li>                                  
-            <li><a href="#">Sobre mim</a></li>                                  
-            <li><a href="#">Serviços</a></li>                                  
-            <li><a href="#">Produtos</a></li>                                  
-          </ul>  
+            <a href="index.html"><h1 class="logo"><span class="branco">Estag</span>SEO</h1></a>
+            <ul> 
+              <li><a href="#">Home</a></li>                                  
+              <li><a href="#">Contato</a></li>                                  
+              <li><a href="#">Sobre mim</a></li>                                  
+              <li><a href="#">Serviços</a></li>                                  
+              <li><a href="#">Produtos</a></li>                                  
+            </ul>  
         </nav>
     </header>
 
     <main class="conteudo">                                           <!--  CONTEÚDO PRINCIPAL-->
-      <section class="intro">
+      <div class="welcome">
         <h1>Introdução</h1>
         <p>Bem-vindo ao Blog do Estagiário em SEO! Aqui você encontrará conteúdo sobre otimização de mecanismos de busca e muito mais.</p>
+      </div>
+      <section class="intro">
         <div>
           <h2>O que é SEO</h2>
-          <img src="" alt="search engine optimization">
+          <img src="imagens/seo.png" alt="search engine optimization">
           <p>SEO (Search Engine Optimization) é o conjunto de estratégias e técnicas utilizadas para melhorar a visibilidade e o posicionamento de um site nos resultados orgânicos dos mecanismos de busca, como Google, Bing e Yahoo. O objetivo do SEO é aumentar o tráfego de visitantes qualificados ao site, proporcionando maior exposição e, consequentemente, potencializando as oportunidades de conversão e vendas.</p>
         </div>
       </section>
@@ -34,18 +36,27 @@
       <section class="service">
         <h2>Serviços</h2>
         <ul>
-            <li>Serviço 1</li>
-            <li>Serviço 2</li>
-            <li>Serviço 3</li>
+            <a href="https://pt.semrush.com/blog/seo-on-page/"><li>SEO On-page</li></a>
+            <a href="https://rockcontent.com/br/blog/seo-tecnico/"><li>SEO Técnico</li></a>
+            <a href="https://pt.semrush.com/blog/seo-off-page-o-que-e/"><li>SEO Of-page</li></a>
         </ul>
       </section>
 
       <section class="tool">
           <h2>Galeria de Ferramentas</h2>
-          <div>
+          <div class="linha">
+            <div class="tool-item">
               <img src="imagens/GSC.png" alt="Google Search Console">
+              <p>O Google Search Console é uma plataforma gratuita que permite monitorar e otimizar a presença online dos sites.</p>
+            </div>
+            <div class="tool-item">
               <img src="imagens/GA4.webp" alt="Google Analytics">
+              <p>O Google Analytics é o serviço oficial e gratuito de monitoramento de Marketing Digital do Google.</p>
+            </div>
+            <div class="tool-item">
               <img src="imagens/Frog.png" alt="Screaming Frog">
+              <p>O Screaming Frog é uma ferramenta de SEO que permite analisar e auditar sites de forma eficiente.</p>
+            </div>
           </div>
       </section>
     </main>
