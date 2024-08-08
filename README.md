@@ -79,8 +79,8 @@ Exemplo de Estrutura de Diretórios:
  
  
 ### Dicas para Conclusão do Projeto 
-• Verifique regularmente a visualização do site em diferentes 
+- Verifique regularmente a visualização do site em diferentes 
 dispositivos (usando ferramentas de desenvolvedor do navegador).
-• Teste a navegação do site para garantir que todos os links funcionem 
+- Teste a navegação do site para garantir que todos os links funcionem 
 corretamente.
-• Revise o código para assegurar a clareza e a organização.
+- Revise o código para assegurar a clareza e a organização.
