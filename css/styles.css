@@ -37,7 +37,6 @@ header nav {
     padding: 10px;
     color: #333;
     font-weight: bold;
-    margin-right: 200px;
 }
 
 nav ul{
@@ -137,9 +136,18 @@ h1{
 }
 
 h2 {
-    font-family: 'helvetica', serif;
-    color: #ffffff;
+    font-family: 'Verdana', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #fa16e7;
     padding: 20px 0px;
+    font-weight: 100%;
+}
+
+.service h2{
+    color: #383737;
+}
+
+.tool h2{
+    color: #be1111;
 }
 
 ul {
@@ -172,15 +180,16 @@ ul {
 
 .tool-item {
     text-align: center;
-    margin: 0 10px;
+    margin: 10px 10px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    position: relative; /* Adicionando posição relativa */
 }
 
 .tool-item img {
-    width: 300px; 
-    height: 0;
+    width: 300px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -188,9 +197,21 @@ ul {
     margin: 0;
     font-weight: bold;
     text-align: center;
-    padding: 10px 100px;
+    padding: 0px 20px;
     color: rgb(30, 29, 29);
     font-size: 15px;
+    background: whitesmoke; /* Adicionando fundo ao texto */
+    position: absolute;
+    bottom: -100%; /* Esconde o texto inicialmente */
+    left: 0;
+    right: 0;
+    transition: bottom 0.3s, opacity 0.3s; /* Adicionando uma transição suave para a posição e a opacidade */
+    opacity: 0; /* Torna o texto transparente inicialmente */
+}
+
+.tool-item:hover p {
+    bottom: 0; /* Mostra o texto ao passar o mouse */
+    opacity: 1; /* Torna o texto visível */
 }
 
 .tool img {
@@ -199,6 +220,61 @@ ul {
     margin: 0 10px;
     flex-shrink: 0;
 }
+
+/* ==================    MEDIA QUERIES       ==================*/
+@media only screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: row;
+    }
+
+    header{
+        padding: 10px 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        
+    }
+
+    .logo {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .intro img {
+        height: auto;
+    }
+
+    .tool-item img {
+        width: 100%;
+    }
+
+    .tool-item p {
+        padding: 10px;
+    }
+
+    
+
+}
+
+
 /* ===================          RODAPÉ            =============*/
 footer {
     background-color: rgb(228, 48, 222);
