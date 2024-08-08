@@ -55,17 +55,16 @@ Avaliação: 1 ponto pela implementação correta de Media Queries para
 responsividade.
 
 ### Etapa 5: Conteúdo e Acessibilidade (1 ponto) 
-• Adicione conteúdo relevante a cada seção (pode ser fictício).
-• Certifique-se de que todas as imagens tenham textos alternativos (alt).
-• Use tags de cabeçalho (<h1>, <h2>, etc.) apropriadamente.
-• Verifique a acessibilidade geral do site (uso de cores contrastantes, 
+- Adicione conteúdo relevante a cada seção (pode ser fictício).
+- Certifique-se de que todas as imagens tenham textos alternativos (alt).
+- Use tags de cabeçalho (<h1>, <h2>, etc.) apropriadamente.
+- Verifique a acessibilidade geral do site (uso de cores contrastantes, 
 textos descritivos, etc.).
 
-Avaliação: 1 ponto pela inclusão de conteúdo relevante e práticas de 
-acessibilidade.
+Avaliação: 1 ponto pela inclusão de conteúdo relevante e práticas de acessibilidade.
+
 Pontuação Final 
-A soma das notas de cada etapa completada resultará na nota final, com um 
-máximo de 5 pontos.
+A soma das notas de cada etapa completada resultará na nota final, com um máximo de 5 pontos.
 
 Exemplo de Estrutura de Diretórios: 
 /seuProjeto 
